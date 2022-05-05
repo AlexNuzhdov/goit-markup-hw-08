@@ -1,0 +1,77 @@
+/* ПАДИНГИ PROJECT SECTION*/
+.box-project {
+    padding-bottom: 94px;
+ 
+ }
+ /*КОНТЕЙНЕР  PROJECT SECTION*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* ЗАГОЛОВОК PROJECT-SECTION*/
+.box-project__heading { 
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.about-us__heading {
+    margin: 0;
+    padding: 0;
+    margin-top: 27px;
+    margin-bottom: 27px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+}
+
+/* PROJECT SECTION*/
+
+.about-us {
+    margin:0;
+    padding: 0;
+    display: flex;
+    margin-left: -30px;
+    margin-top: -30px;
+    list-style: none;
+}
+.about-us > .about-us__card {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+   
+    
+}
+/*ПОЗИЦИОНИРОВАНИЕ PROJECT SECTION*/
+.about-us__card {
+    position: relative;
+  }
+     
+
+/* ЗАГОЛОВОК THUMB */
+.about-us__thumb {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background: $project-thumb-bg;
+    position: absolute;
+    bottom: 0px;
+    width: 370px;
+   
+}
+

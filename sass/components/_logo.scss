@@ -1,0 +1,36 @@
+/* Лого */
+.main-nav__logo {
+    
+    color: $primary-text-color;
+    font-family: $font-family-logo;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+    text-decoration: none;
+
+    &--color {
+        color: $accent-color;
+    }
+}
+
+
+ /* Лого Футер*/
+.logo-footer {
+   
+    color: $primary-white-color;
+    font-family: $font-family-logo;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    &__color {
+        color: $accent-color;
+    }
+
+}

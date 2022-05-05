@@ -1,0 +1,373 @@
+/*МОДАЛЬНОЕ ОКНО*/
+/* БЄКДРОП СЕРЫЙ ФОН*/
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: $modal-bg-color;
+    top: 0;
+    left: 0;
+    
+}
+/* УТИЛИТНЫЙ КЛАСС*/
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+   
+    transition-property: opacity;
+    transition-duration: ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
+}
+
+/* ФОРМА МОДАЛЬНОГО ОКНА */
+.modal {
+    width: 528px;
+    height: 581px;
+    background-color: $primary-white-color;
+   
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    position: relative;
+    
+}
+/* СКОРОСТЬ ОТКРЫТИЯ МОДАЛЬНОГО ОКНА*/
+.backdrop {
+    opacity:1;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* ОФОРМЛЕНИЕ МАЛЕНЬКОЙ КНОПКИ */
+.modal__button {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    top:8px;
+    right: 8px;
+    background-color: $primary-white-color;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.modal__close {
+    width: 18px;
+    height: 18px;
+    background-color: $primary-white-color;
+
+    &:hover,
+    &:focus {
+    fill:$accent-color;
+
+    transition-property:  fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .modal__button:focus & {
+    fill:$accent-color;
+
+    transition-property:  fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+// /* ФОКУС МАЛЕНЬКОЙ КНОПКИ*/
+// .modal__button:focus .modal__close {
+//     fill:$accent-color;
+//     transition-property:  fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+// }
+//   /* ХОВЕР КНОПКИ и СКОРОСТЬ ХОВЕРА ЗАКРЫТИЯ */
+// .modal__close:hover {
+//     fill:#2196F3;
+//     cursor: pointer;
+//       transition-property:  fill;
+//       transition-duration: 250ms;
+//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+// }
+
+/* КНОПКА ФОРМЫ МАЛЕНЬКАЯ*/
+.button-form {
+    
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: $accent-color;
+    color: $primary-white-color;
+
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;  
+    cursor: pointer;
+
+}
+
+/* МОДАЛЬНАЯ ФОРМА*/
+.form-modal {
+    width: 448px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:0;
+   
+}
+.form-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding:0;
+    margin: 0;
+}
+.form-field input{
+    margin:0;
+    padding:0;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 30px;
+}
+.form-field label {
+    font-weight: 400;
+    margin-bottom: 4px;
+    margin-top: 10px;
+}
+/* ОФОРМЛЕНИЕ ТЕКСТЕРИИ*/
+.form-field__comment {
+    padding-top: 12px;
+    padding-left: 15px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17px;
+    letter-spacing: 0.01em;
+
+}
+.form-field textarea {
+    resize: none;
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+/* Цвет Плейсхолдера*/
+.form-field textarea::placeholder{
+    color: rgba(117, 117, 117, 0.5);
+}
+/* ОФОРМЛЕНИЕ ЗАГОЛОВКА ФОРМЫ*/
+.form-modal__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    color: $primary-text-color;
+    padding-top: 40px;
+    margin: 0;
+   
+}
+/*ОФОРМЛЕНИЕ Label ФОРМЫ*/
+.form-field__text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $secondary-text-color;
+}
+.btn-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+/* ИКОНКИ ФОРМЫ*/
+.form-field__person {
+    display: inline-block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 57%;
+    left: 20px;
+    transform: translateX(-50%);
+
+    .form-field__input:hover ~ & ,
+    .form-field__input:focus ~ & {
+        fill: $accent-color;
+
+        transition-property:  fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+// .form-field__input:hover ~ .form-field__person,
+// .form-field__input:focus ~ .form-field__person,
+// .form-field__input:hover ~ .form-field__tel,
+// .form-field__input:focus ~ .form-field__tel,
+// .form-field__input:hover ~ .form-field__email,
+// .form-field__input:focus ~ .form-field__email{
+//     fill: #2196F3;
+//     transition-property:  fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// }
+
+.form-field__tel{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+
+    top:57%;
+    left: 20px;
+    transform: translateX(-50%);
+
+    .form-field__input:hover ~ & ,
+    .form-field__input:focus ~ & {
+        fill: $accent-color;
+        
+        transition-property:  fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+   
+}
+.form-field__email {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 57%;
+    left: 20px;
+    transform: translate(-50%);
+
+    .form-field__input:hover ~ & ,
+    .form-field__input:focus ~ & {
+        fill: $accent-color;
+        
+        transition-property:  fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.form-field__input {
+    &:hover {
+        border-color: $accent-color;
+        cursor: pointer;
+        transition-property: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+   
+}
+
+/* ОФОРМЛЕНИЕ ЧЕКБОКСА*/
+  .form-checkbox__icon {
+    display: inline-block; 
+    width: 16px;
+    height: 15px;
+    border: 2px solid black;
+    border-radius: 2px;
+    margin-right: 9px;
+}
+
+.form-checkbox__checkbox:checked + .form-checkbox__icon {
+    background-color: $accent-color;
+    background-image: url(/images/icon-svg/form/Vector.svg);
+    background-size: contain;
+    background-origin: content-box;
+    border-color: $accent-color;
+    
+}
+.form-checkbox {
+    margin-top: 20px;
+    padding: 0;
+}
+
+.label {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+}
+/* СКРЫТИЕ ЧЕКБОКСА ДЕФОЛТНОГО*/
+.form-checkbox__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    
+}
+/* ЦВЕТ ТЕКСТА УСЛОВИЙ */
+.text-policy {
+    color: $accent-color;
+    margin-left: 5px;
+    border-bottom: $accent-color;
+    position: relative;
+}
+/*ЛИНИЯ СИНЯЯ*/
+.text-policy::after {
+    content:  "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $accent-color;
+    position: absolute;
+    bottom: 4px;
+    left:0;
+}
+
+/* ОФОРМЛЕНИЕ ТЕКСТА ЧЕКБОКСА*/
+.form-checkbox__text {
+    padding: 0;
+    margin:0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+/*КНОПКА FORM */
+.btn-form__button {
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: $accent-color;
+    color: $primary-white-color;
+
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;  
+    cursor: pointer;
+}

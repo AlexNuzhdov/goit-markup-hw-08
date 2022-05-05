@@ -1,0 +1,211 @@
+/* ПАДИНГИ СЕКЦИИ TEAM*/
+.our-team {
+    background-color: $card-background-color;
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+/*КОНТЕЙНЕР OUR-TEAM*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* ЗАГОЛОВОК OUR-TEAM */
+.our-team__heading {
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+    margin-bottom: 50px;
+   text-align: center;
+}
+.team {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.team > .team__list {
+    flex-basis: calc(100% / 4 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.desc-content {
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: $primary-white-color;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+/*OUR TEAM SECTION*/
+.team .desc-content__caption{
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;  
+    text-align: center;
+    
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.team .desc-content__subtitle {
+    color: $secondary-text-color;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;  
+    text-align: center;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+  
+}
+.social-media {
+    display: flex;
+    padding: 0;
+    margin-top: 16px;
+    text-align: center;
+  
+    justify-content: center;
+    list-style: none;
+}
+
+ .social-media__icon {
+    display:flex;
+    width: 44px;
+    min-height: 44px;
+    margin:0;
+    
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/*КНОПКА!!!CОЦИАЛЬНЫЕ ИКОНКИ КОМАНДЫ*/
+.social-media__links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    background-color: $primary-white-color;
+
+    transition-property:background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;  
+    }
+
+}
+
+
+.social-media__instagram {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+
+    .social-media__links:hover &,
+    .social-media__links:focus & {
+     fill: $primary-white-color;
+    }
+
+}
+.social-media__twiter {
+    padding: 0;
+    width: 20px;
+    height: 16.25px;
+    fill: $icon-color;
+
+    .social-media__links:hover &,
+    .social-media__links:focus & {
+     fill: $primary-white-color;
+    }
+    
+}
+
+.social-media__facebook {
+    padding: 0;
+    width: 10px;
+    height: 20px;
+    fill: $icon-color;
+
+    .social-media__links:hover &,
+    .social-media__links:focus & {
+     fill: $primary-white-color;
+    }
+}
+.social-media__linkedin {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+
+    .social-media__links:hover &,
+    .social-media__links:focus & {
+     fill: $primary-white-color;
+    }
+
+}
+/* HOVER и FOCUS СОЦИАЛЬНОЙ СЕТИ*/
+// .social-media__links:hover .social-media__instagram,
+// .social-media__links:focus .social-media__instagram{
+//     fill: $primary-white-color;      
+// }
+// .social-media__links:hover .social-media__twiter,
+// .social-media__links:focus .social-media__twiter{
+//     fill: $primary-white-color;      
+// }
+// .social-media__links:hover .social-media__facebook,
+// .social-media__links:focus .social-media__facebook{
+//     fill: $primary-white-color;      
+// }
+// .social-media__links:hover .social-media__linkedin,
+// .social-media__links:focus .social-media__linkedin{
+//     fill: $primary-white-color;      
+// }
+
+.social-media__icon:not(:last-child) {
+    margin-right: 10px;
+}
+.team__list {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+} 
+
+ .team__list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+     0px 4px 4px rgba(0, 0, 0, 0.06),
+     1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}

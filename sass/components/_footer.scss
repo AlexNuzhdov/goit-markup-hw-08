@@ -1,0 +1,232 @@
+.footer {
+    background-color: $footer-bacground-color;
+}
+/*КОНТКЙНЕР FOOTER*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* ПАДИНГИ ФУТЕРА*/
+.sidebar {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.adress {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 70px;
+}
+.aside{
+    
+    list-style: none;
+     padding: 0;
+     margin-top: 20px;
+     margin-bottom: 0;
+     
+
+}
+.aside__desc:not(:last-child) {
+    margin-bottom: 10px;
+}
+.aside__item {
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
+    
+
+}
+// .aside__item:hover,
+// .aside__item:focus {
+//   color: $accent-color;
+// }
+
+.aside__colortext {
+   color: $primary-white-color;
+}
+
+.social-network {
+   padding-top: 72px;
+   padding-bottom: 100px;
+   margin-right: 102px;
+  
+}
+.social-network__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    padding: 0;
+    margin: 0;
+}
+.social-network__links {
+    padding:0;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    margin-bottom: 0;
+}
+.social-icon {
+    display: block;
+    width: 44px;
+    min-height: 44px;
+    margin-right: 10px;
+    list-style: none;
+    border-radius: 50%;
+}
+.social-icon__button {
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+
+     
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+    background-color: $accent-color;
+    }
+
+}
+//  .social-icon__button:hover,
+//  .social-icon__button:focus{
+//     background-color: $accent-color;
+    
+// }
+
+.social-icon__instagram {
+  
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    fill:$primary-white-color;
+}
+
+
+.social-icon__twiter {
+    
+    padding: 0;
+    width: 20px;
+    height: 16.25px;
+    fill:$primary-white-color;
+ 
+}
+.social-icon__facebook {
+    padding: 0;
+    width: 10px;
+    height: 20px;
+    fill:$primary-white-color;
+   
+   
+}
+.social-icon__linkedin {
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    fill:$primary-white-color;
+}
+/* ФОРМА ФУТЕРА */
+.footer-form {
+    padding-top: 72px;
+    padding-bottom: 94px;
+    margin: 0;
+}
+/* ОФОРМЛЕНИЕ ЗАГОЛОВКА ФОРМЫ ФУТЕРА*/
+.footer-form__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+    padding: 0;
+    margin: 0;
+}
+/*ФОРМА ФУТЕРА*/
+.form__email input{
+    width: 358px;
+    height: 50px;
+    background-color: $footer-bacground-color;
+    border: 1px solid $form-input-border-color;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-right: 12px;
+    padding:0;
+}
+.form__email input::placeholder{
+    width: 47px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 1.25;
+     letter-spacing: 0.03em;
+}
+/* ЦВЕТ ТЕКСТА ФОРМЫ ФУТЕРА*/
+.form__text {
+    color:  $primary-text-color;
+}
+/*КНОПКА ФУТЕРА*/
+.form__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 200px;
+    height: 50px;
+    margin:0;
+    padding: 0;
+    
+    background-color: $accent-color;
+    color: $primary-white-color;
+
+    text-decoration: none;
+    border-radius: 4px;
+    
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;  
+}
+.form__icon {
+    width: 24px;
+    height: 24px;
+    fill: $primary-white-color;
+    margin-left: 10px;
+}
+.form {
+    display: flex;
+    margin-top: 20px;
+    padding: 0;
+}

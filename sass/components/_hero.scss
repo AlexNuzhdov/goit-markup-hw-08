@@ -1,0 +1,65 @@
+.hero {
+text-align: center;
+      
+}
+ 
+/*ФОН НА ВЕСЬ БЛОК HERO*/
+.overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url("../images/studio-overlay/overley.jpg");
+        
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay__title {
+    color: $primary-white-color;
+    
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-transform:uppercase;
+    letter-spacing: 0.06em;
+
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+
+}
+
+/* КНОПКА HERO*/
+.overlay__button{
+   
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: $accent-color;
+    color: $primary-white-color;
+
+    text-decoration: none;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: $animation-time;
+    
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.89;
+    letter-spacing: 0.06em;  
+    cursor: pointer;
+
+}

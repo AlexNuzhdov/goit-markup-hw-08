@@ -1,0 +1,158 @@
+/*КОНТЕЙНЕР  HEADER*/
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+/* ЛИНИЯ ХЕДЕРА*/
+.head{
+    border-bottom: 1px solid $border-header-color;
+   
+}
+/* ДИСПЛЕЙ ФЛЕКС ХЕДЕР*/
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav{
+    list-style: none;
+    display: flex;
+    margin:0;
+    padding: 0;
+    
+}
+.site-nav__item {
+    & + & {
+    margin-left: 50px;
+    }
+}
+// /* ОТСТУПЫ SITE-NAV*/
+// .site-nav .site-nav__item + .site-nav__item {
+//     margin-left: 50px;
+// }
+
+ .site-nav__link{
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+
+    color: $primary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $animation-time;
+
+    &:hover,
+    &:focus {
+        color:  $accent-color;
+    }
+    
+    & {
+        position: relative;
+    }
+    
+    &.site-nav__current {
+    color: $accent-color;
+    }
+    
+}
+// .site-nav__link:hover,
+// .site-nav__link:focus{
+//     color: var(--accent-color);
+// }
+
+// /* CURRENT SITE-NAV*/
+// .site-nav .site-nav__link.site-nav__current {
+//     color: $accent-color;
+// }
+
+
+
+.site-nav__link.site-nav__current::after{
+ content: "";
+ position: absolute;
+ display: block;
+
+ border: 1px solid $accent-color;
+ border-radius: 2px;
+ background-color: $accent-color;
+ 
+ left: 0;
+ width: 44px;
+ height: 4px;
+ bottom: -1px;
+ width: 100%;
+ opacity: 1;
+
+ transition-property: background-color;
+ transition-duration: 250ms;
+ transition-timing-function: $animation-time;
+ 
+
+}
+
+/* CONTACT*/
+
+.contact {
+    display: flex;
+    margin-left:auto;
+    list-style: none;
+    padding: 0;
+    
+}
+
+.contact__link {
+    display: flex;
+    flex-direction:row-reverse;
+    align-items: center;
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+     margin: 0;
+     padding: 0;
+
+     transition-property: color;
+     transition-duration: 250ms;
+     transition-timing-function: $animation-time;
+
+     &:hover,
+     &:focus {
+     color: #2196F3;
+     cursor: pointer;
+     }
+  
+}
+
+.contact__mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: $secondary-text-color;
+
+    & {
+     fill: currentColor;
+    }
+}
+.contact__tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    margin-left: 30px;
+    fill: $secondary-text-color;
+    fill: currentColor;
+}
+
