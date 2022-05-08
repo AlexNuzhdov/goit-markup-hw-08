@@ -1,17 +1,27 @@
-.client-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   
-    margin-left: auto;
-    margin-right: auto;
+
+.client-section {
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+         
+    @media screen and (min-width:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+  
     
+
 }
+
+
+    
+// }
 /* ЗАГОЛОВОК КЛИЕНТЫ*/
 .client-section__heading {
     color: $primary-text-color;
@@ -20,26 +30,62 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-top: 0;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
    text-align: center;
 }
 .client {
-    display: flex;
+    // display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
+
+  @media screen and (min-width:480px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+
+
+
+  @media screen and (min-width:1200px) {
+    display: flex;
+    
 }
+
+}
+
 /*ClIENTS SECTION*/
 .client__item {
     display: flex;
-     text-align: center;
-     list-style: none;
+    list-style: none;
+
+    &:not(:last-child){
+        margin-bottom: 30px;
+     }
+     
+     @media screen and (min-width:780px) {
+        width: 226px;
+         
+    }
+    @media screen and (min-width:1200px) {
+         width: 170px;
+        
+         &:not(:last-child){
+            margin-bottom: 0;
+         }
+    }
+
+    
+     
+
+    
     
 }
 /*КНОПКИ ПОСТОЯННЫЕ КЛИЕНТЫ*/
 .client__button {
     display: flex;
-    width: 170px;
+    // width: 170px;
+    width: 210px;
     height: 92px;
     padding: 0;
     background-color: $primary-white-color;
@@ -54,6 +100,8 @@
     &:hover {
     border-color: $accent-color;
     }
+    
+
    
 }
 
@@ -84,7 +132,7 @@
 //     fill: $accent-color;
     
 // }
-.client__item:not(:last-child){
-    margin-right: 30px;
+// .client__item:not(:last-child){
+//     margin-right: 30px;
    
-}
+// }

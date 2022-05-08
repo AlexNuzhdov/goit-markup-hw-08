@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Веб Студия</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
@@ -18,7 +18,20 @@
       
            <div class="container">
                 <nav class="main-nav">
-                  <a href="" class="main-nav__logo"><span class="main-nav__logo--color">Web</span>Studio</a>  
+                  <a href="" class="main-nav__logo"><span class="main-nav__logo--color">Web</span>Studio</a> 
+                   
+                  <button  type="button" class="menu-bg" 
+                   aria-expanded="false"
+                   aria-controls="menu-container"
+                   data-menu-button>
+                      <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                          <use class="icon-cross" href="/images/icon-svg/form-mobile/symbol-defs.svg#close_40px"></use>
+                          <use class="icon-menu" href="/images/icon-svg/form-mobile/symbol-defs.svg#menu_40px"></use>
+                      </svg>
+                  </button>
+                  <div class="menu-container"  id="menu-container" data-menu>
+                    Контент меню
+                  </div>
                   <ul class="site-nav">
                     <li class="site-nav__item"><a href="#" class="site-nav__link site-nav__current">Студия</a></li>
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
@@ -57,13 +70,16 @@
     <main>
        <!--Hero--> 
         <section class="hero">
-            <div class="overlay">
+            
+                <div class="overlay">
                 
-                   <h1 class="overlay__title"> Эффективные решения <br> для вашего бизнеса</h1>
-        
-                   <button data-modal-open class="overlay__button">Заказать услугу</button>
-
-            </div>        
+                    <h1 class="overlay__title"> Эффективные решения <br> для вашего бизнеса</h1>
+         
+                    <button data-modal-open class="overlay__button">Заказать услугу</button>
+ 
+                </div>       
+           
+             
                 
         </section>           
                 
@@ -135,7 +151,7 @@
 
                 <ul class="team">
                     <li class="team__list">
-                        <img src="./images/team/team-1.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <img src="./images/team/team-1.jpg" alt="Игорь Демьяненко" width="450" height="460">
 
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Игорь Демьяненко</h3>
@@ -183,7 +199,7 @@
                         </div>
                     </li>
                     <li class="team__list">
-                        <img src="./images/team/team-2.jpg" alt="Ольга Репина" width="270" height="260">
+                        <img src="./images/team/team-2.jpg" alt="Ольга Репина" width="450" height="460">
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Ольга Репина</h3>
                             <p class="desc-content__subtitle">Frontend Developer</p>
@@ -231,7 +247,7 @@
                         </div>
                     </li>
                     <li class="team__list">
-                        <img src="./images/team/team-3.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <img src="./images/team/team-3.jpg" alt="Николай Тарасов" width="450" height="460">
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Николай Тарасов</h3>
                             <p class="desc-content__subtitle">Marketing</p>
@@ -276,7 +292,7 @@
                         </div>
                     </li>
                     <li class="team__list">
-                        <img src="./images/team/team-4.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <img src="./images/team/team-4.jpg" alt="Михаил Ермаков" width="450" height="460">
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Михаил Ермаков</h3>
                             <p class="desc-content__subtitle">UI Designer</p>
@@ -375,6 +391,7 @@
                         </a>
                     </li>
                 </ul>
+            </div>    
         </section>
               
     </main>
@@ -441,7 +458,7 @@
                     </form>
                     <a href="#" class="form__button">Подписаться
                         <svg class="form__icon">
-                           <use href="./images/icon-svg/icon-send/symbol-defs.svg#icon-send-1"></use>
+                           <use href="./images/footer/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </a>
                  </div>
@@ -506,6 +523,9 @@
         </div>
         
     </div>
+   
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  
 </body>
 </html>

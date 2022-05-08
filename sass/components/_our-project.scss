@@ -1,18 +1,25 @@
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* CКРЫТИЕ СЕКЦИИ*/
+.box-project {
+    @media (max-width:1199px) {
+       display: none;
+    }
+}
+
+
 /* ПАДИНГИ PROJECT SECTION*/
 .box-project {
     padding-bottom: 94px;
  
  }
  /*КОНТЕЙНЕР  PROJECT SECTION*/
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+
 /* ЗАГОЛОВОК PROJECT-SECTION*/
 .box-project__heading { 
     color: $primary-text-color;

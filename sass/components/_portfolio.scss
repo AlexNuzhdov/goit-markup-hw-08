@@ -1,30 +1,26 @@
 /* PADDING PROJECT*/
-.content-project {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-/*КОНТЕЙНЕР*/
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   
-    margin-left: auto;
-    margin-right: auto;
-}
+// .content-project {
+//     padding-top: 94px;
+//     padding-bottom: 94px;
+// }
+
 
 /*PROJECT ПОРТФОЛИО*/
 .control {
     list-style: none;
-    margin-top: 0;
-    margin-bottom: 50px;
     display: flex;
-    text-align:center;
-    justify-content: center;
-    padding: 0;
+    flex-wrap: wrap;
+
+    // text-align:center;
+    align-content: flex-start;
+    margin: 0;
+    padding-top: 60px;
+ 
 }
+
 .control .control__item {
     margin-left: 8px;
+    margin-bottom: 15px;
    
 }
 .сontrol .item {
@@ -48,7 +44,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
+    // text-align: center;
     letter-spacing: 0.03em;
     text-decoration: none;
 
@@ -63,11 +59,11 @@
     }
 }
 
-// .control__button:hover, 
-// .control__button:focus {
-//     background-color: $accent-color;
-//     color: $primary-white-color;
-// }   
+.control__button:hover, 
+.control__button:focus {
+    background-color: $accent-color;
+    color: $primary-white-color;
+}   
 
 /* КАРТОЧКИ CARD_SET */
 
@@ -75,7 +71,7 @@
     padding: 0;
     margin: 0;
     list-style: none;
-    display: flex;
+    // display: flex;
     flex-wrap: wrap;
    
     margin-left: -30px;
@@ -102,12 +98,12 @@
     }
 }
 
-// .card-set__list:hover {
-//     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-//      0px 4px 4px rgba(0, 0, 0, 0.06),
-//      1px 4px 6px rgba(0, 0, 0, 0.16);
-//     cursor: pointer;
-// }
+.card-set__list:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+     0px 4px 4px rgba(0, 0, 0, 0.06),
+     1px 4px 6px rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
 
 
 .card-thumb {
@@ -145,10 +141,10 @@
     }
     
 }
-// .card-set__list:hover .card-thumb__text {
-//     transform: translateY(0);
-//     opacity: 1;
-// }
+.card-set__list:hover .card-thumb__text {
+    transform: translateY(0);
+    opacity: 1;
+}
 
 /* ПАДИНГИ КАРТОЧЕК ПОРТФОЛИО*/
 .card-сontent {

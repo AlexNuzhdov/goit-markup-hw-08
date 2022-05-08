@@ -1,42 +1,96 @@
-/*КОНТЕЙНЕР  HEADER*/
-.container {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-   
-    margin-left: auto;
-    margin-right: auto;
-    
-}
+
 /* ЛИНИЯ ХЕДЕРА*/
-.head{
+.head {
     border-bottom: 1px solid $border-header-color;
-   
-}
-/* ДИСПЛЕЙ ФЛЕКС ХЕДЕР*/
-.main-nav {
-    display: flex;
-    align-items: center;
+    /*Позиционирование меню*/ 
+    position: relative;
 }
 
-.site-nav{
+/* ДИСПЛЕЙ ФЛЕКС ХЕДЕР*/
+.main-nav {
+ display: flex;
+ align-items: center; 
+   
+  
+}
+
+/*МЕНЮ КОНТЕЙНЕР*/
+.menu-container {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+   
+    background-color: palegoldenrod;
+    padding: 20px;
+    text-align: center;
+    font-size:20px;
+
+    &.is-open {
+        display: block;
+    }
+}
+
+
+
+
+/* ОФОРМЛЕНИЕ КНОПКИ МЕНЮ БУРГЕРА*/
+.menu-bg {
+  
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+
+   /*CКРЫТИЕ ИКОНКИ*/
+    & .icon-cross {
+        display: none;
+    }
+   
+    @media screen and (min-width:1200px) {
+        display: none;
+    }
+
+
+}
+/*------------* END--------------*/
+
+.menu-bg.is-open .icon-cross {
+    display: block;
+}
+.menu-bg.is-open .icon-menu {
+    display: none;
+}
+
+.site-nav {
     list-style: none;
-    display: flex;
+    // display: flex;
     margin:0;
     padding: 0;
     
+   /* CКРЫТИЕ СЕКЦИИ ДО 767 px*/
+   @media screen and (max-width:767px) {
+    display: none;
+ }
+   @media screen and (min-width:1200px) {
+   display: flex;
+    
+  }
+  
+
+    
 }
+
+/* ОТСТУПЫ*/
 .site-nav__item {
     & + & {
     margin-left: 50px;
     }
 }
-// /* ОТСТУПЫ SITE-NAV*/
-// .site-nav .site-nav__item + .site-nav__item {
-//     margin-left: 50px;
-// }
 
- .site-nav__link{
+ .site-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
     display: block;
@@ -79,7 +133,7 @@
 
 
 
-.site-nav__link.site-nav__current::after{
+.site-nav__link.site-nav__current::after {
  content: "";
  position: absolute;
  display: block;
@@ -105,11 +159,19 @@
 /* CONTACT*/
 
 .contact {
+    // display: flex;
+   
+    list-style: none;
+    // padding: 0;
+
+  /* CКРЫТИЕ СЕКЦИИ*/
+    @media screen and (max-width:767px) {
+    display: none;
+   }
+   @media screen and (min-width:1200px) {
     display: flex;
     margin-left:auto;
-    list-style: none;
-    padding: 0;
-    
+   }
 }
 
 .contact__link {
@@ -147,6 +209,7 @@
      fill: currentColor;
     }
 }
+
 .contact__tel {
     width: 10px;
     height: 16px;
