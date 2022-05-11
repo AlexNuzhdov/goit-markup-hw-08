@@ -14,7 +14,10 @@ text-align: center;
  
 /*ФОН НА ВЕСЬ БЛОК HERO*/
 .overlay {
-    max-width: 480px;
+
+@media screen and (max-width:767px){
+       
+    min-width: 480px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
@@ -30,6 +33,47 @@ text-align: center;
     background-size: cover;
 
   
+}
+
+@media screen and (min-width:768px){
+       
+    // max-width: 768px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header\ 768.jpg");
+        
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  
+}
+
+@media screen and (min-width:1200px) {
+       
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+   
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4), 
+        rgba(47, 48, 58, 0.4)), url("/images/studio-overlay/overley.jpg");
+        
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  
+}
 
     
 }
@@ -54,6 +98,8 @@ text-align: center;
     line-height: 1.4;
     text-transform:uppercase;
     letter-spacing: 0.06em;
+    padding-top: 200px;
+    margin-bottom: 30px;
 }
    
 }
