@@ -12,71 +12,77 @@ text-align: center;
      
 }
  
-/*ФОН НА ВЕСЬ БЛОК HERO*/
+/*ФОН НА ВЕСЬ БЛОК HERO и ФОНОВЫЕ ОТЗЫВЧИВЫЕ ИЗОБРАЖЕНИЯ*/
 .overlay {
 
-@media screen and (max-width:767px){
-       
     min-width: 480px;
     height: 400px;
     margin-left: auto;
     margin-right: auto;
+  
    
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header\ 1x.jpg");
+        rgba(47, 48, 58, 0.4)),
+         url("/images/mobile/hero/Header_mobile@1.jpg");
         
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+         background-repeat: no-repeat;
+         background-position: center;
+         background-size: cover;
 
-  
+         @media (min-resolution: 2dppx) {
+            .overlay {
+                background-image: url("/images/mobile/hero/Header_mobile@2x.jpg");
+            }
+        }
 }
 
-@media screen and (min-width:768px){
+
+
+   @media (min-width:481px) {
+       .overlay {
+        
+        background-image:linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4), 
+            rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header_tablet@1.jpg");
+       }
        
-    // max-width: 768px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
+       @media (min-resolution: 2dppx) {
+        .overlay {
+            background-image: url("/images/mobile/hero/Header_tablet@2X.jpg");
+        }
+     }    
+      
+   }
+
+
+   @media (min-width:769px) {
+    .overlay {
+        max-width: 1600px;
+        height: 600px;
+        margin-left: auto;
+        margin-right: auto;
+     background-image:linear-gradient(
+         to right,
+         rgba(47, 48, 58, 0.4), 
+         rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Heder_desctop@1.jpg");
+    }
+    
+    @media (min-resolution: 2dppx) {
+     .overlay {
+         background-image: url("/images/mobile/hero/Heder_desctop@2x.jpg");
+     }
+  }    
    
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header\ 768.jpg");
-        
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-  
 }
 
-@media screen and (min-width:1200px) {
-       
-    max-width: 1600px;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-   
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4), 
-        rgba(47, 48, 58, 0.4)), url("/images/studio-overlay/overley.jpg");
-        
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
-  
-}
+ 
 
-    
-}
+// }
+/*-----------------------------END OVERLEY------------------------------*/
 
 .overlay__title {
     color: $primary-white-color;

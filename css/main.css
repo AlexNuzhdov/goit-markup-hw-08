@@ -4,6 +4,10 @@ body {
   font-family: Roboto,sans-serif;
 }
 
+.body.modal-open {
+  overflow: hidden;
+}
+
 /* Лого */
 .main-nav__logo {
   color: #212121;
@@ -22,6 +26,12 @@ body {
 
 @media screen and (max-width: 767px) {
   .main-nav__logo {
+    margin-right: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .main-nav__logo {
     padding-top: 16px;
     padding-bottom: 16px;
   }
@@ -35,12 +45,6 @@ body {
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .main-nav__logo {
-    display: none;
   }
 }
 
@@ -79,18 +83,21 @@ body {
 }
 
 /*МЕНЮ КОНТЕЙНЕР БУРГЕРА*/
+.menu-container {
+  z-index: 2;
+}
+
 @media screen and (max-width: 767px) {
   .menu-container {
     display: none;
     position: absolute;
-    top: 385px;
+    top: 340px;
     left: 50%;
     width: 480px;
     height: 700px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     background-color: #FFFFFF;
-    padding-left: 40px;
   }
   .menu-container.is-open {
     display: block;
@@ -108,15 +115,17 @@ body {
 
 /* ОФОРМЛЕНИЕ КНОПКИ МЕНЮ БУРГЕРА*/
 .menu-burger {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
-  margin-left: auto;
   /*CКРЫТИЕ ИКОНКИ УБИРАЕМ ИЗ ПОТОКА*/
   /* КОГДА НА КНОПКЕ Menu-burger is-open, тогда показывается иконка крест*/
   /* КОГДА НА menu-burger is-open скрывается иконка меню*/
+  z-index: 3;
 }
 
 .menu-burger .icon-cross {
@@ -144,17 +153,19 @@ body {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .site-nav {
+    margin-bottom: 240px;
+    padding-top: 48px;
+    padding-left: 40px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .site-nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .site-nav {
-    margin-bottom: 302px;
   }
 }
 
@@ -260,7 +271,7 @@ body {
 @media screen and (max-width: 767px) {
   .contact {
     margin: 0;
-    padding: 0;
+    padding-left: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -446,6 +457,7 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   text-decoration: none;
+  margin-right: 10px;
 }
 
 .mobile-nav {
@@ -457,7 +469,8 @@ body {
 
 @media screen and (max-width: 767px) {
   .mobile-nav {
-    margin: 0;
+    margin-left: 40px;
+    margin-bottom: 0;
     padding: 0;
   }
 }
@@ -469,7 +482,8 @@ body {
 }
 
 .mobile-nav_item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 /* ВСЕМ КАРТИНКАМ*/
@@ -483,48 +497,56 @@ img {
   text-align: center;
 }
 
-/*ФОН НА ВЕСЬ БЛОК HERO*/
-@media screen and (max-width: 767px) {
-  .overlay {
-    min-width: 480px;
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/hero/Header 1x.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header 1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+/*ФОН НА ВЕСЬ БЛОК HERO и ФОНОВЫЕ ОТЗЫВЧИВЫЕ ИЗОБРАЖЕНИЯ*/
+.overlay {
+  min-width: 480px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/hero/Header_mobile@1.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header_mobile@1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .overlay .overlay {
+    background-image: url("/images/mobile/hero/Header_mobile@2x.jpg");
   }
 }
 
-@media screen and (min-width: 768px) {
+@media (min-width: 481px) {
   .overlay {
-    height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/hero/Header 768.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header 768.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/hero/Header_tablet@1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header_tablet@1.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url("/images/mobile/hero/Header_tablet@2X.jpg");
+  }
+}
+
+@media (min-width: 769px) {
   .overlay {
     max-width: 1600px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/studio-overlay/overley.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/studio-overlay/overley.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/hero/Heder_desctop@1.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Heder_desctop@1.jpg");
   }
 }
 
+@media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url("/images/mobile/hero/Heder_desctop@2x.jpg");
+  }
+}
+
+/*-----------------------------END OVERLEY------------------------------*/
 .overlay__title {
   color: #FFFFFF;
   font-weight: 900;
@@ -1637,7 +1659,7 @@ img {
   .modal {
     width: 528px;
     height: 581px;
-    top: 50%;
+    top: 80%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -2085,6 +2107,12 @@ img {
   margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .control {
+    padding-top: 66px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .control {
     margin-bottom: 30px;
@@ -2217,6 +2245,7 @@ img {
 .card-thumb {
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 
 @media screen and (min-width: 768px) {

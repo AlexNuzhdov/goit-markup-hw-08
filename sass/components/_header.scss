@@ -7,64 +7,52 @@
 }
 
 /* ДИСПЛЕЙ ФЛЕКС ХЕДЕР*/
+
 .main-nav {
-  
-  display: flex;
-  align-items: center; 
+    display: flex;
+    align-items: center; 
  
-//  @media screen and (min-width:768px) {
-//     display: flex;
-   
-     
-// }
-  
 }
 
 /*МЕНЮ КОНТЕЙНЕР БУРГЕРА*/
-.menu-container {
+.menu-container { 
+//  display: flex;
+    z-index: 2;
 
     @media screen and (max-width:767px) {
         display: none;
         position: absolute;
-        top: 385px;
+        top: 340px;
         left:50%;
         width: 480px;
         height: 700px;
         transform: translate(-50%, -50%);
-        // height: 700px;
-        // background-color: $primary-white-color;
         background-color: $primary-white-color;
-        padding-left: 40px;
-
+       
         &.is-open {
             display: block;
         }
-       
+      
     }
-    
-
 
     @media screen and (min-width:768px) {
         display: flex;
         text-align: center;
-         
     }
-   
+
 
 }
 
 
-
-
 /* ОФОРМЛЕНИЕ КНОПКИ МЕНЮ БУРГЕРА*/
 .menu-burger {
-   
-   display: inline-block;
+
+   display: flex;
     margin: 0;
     padding: 0;
     border: none;
     background-color: transparent;
-    margin-left: auto;
+    // margin-left: auto;
 
    /*CКРЫТИЕ ИКОНКИ УБИРАЕМ ИЗ ПОТОКА*/
     & .icon-cross {
@@ -82,6 +70,8 @@
     @media screen and (min-width:768px) {
         display: none;
     }
+
+    z-index: 3;
 }
 /*------------* END--------------*/
 
@@ -94,17 +84,20 @@
 
 .site-nav {
     list-style: none;
-    // display: flex;
     margin:0;
     padding: 0;
+      
+    @media screen and (max-width:767px) {
+        margin-bottom: 240px; 
+        padding-top: 48px; 
+        padding-left: 40px;       
+    }
 
     @media screen and (min-width:768px) {
         display: flex;
          
     }
-    @media screen and (max-width:767px) {
-        margin-bottom: 302px;         
-    }
+   
     
 //    /* CКРЫТИЕ СЕКЦИИ ДО 767 px*/
 //    @media screen and (max-width:767px) {
@@ -233,32 +226,33 @@
 /* CONTACT*/
 
 .contact {
-  
-   list-style: none;
-
-
- 
+    list-style: none;
+   
   @media screen and (max-width:767px) {
     margin: 0;
-    padding: 0;
+    padding-left: 40px;
     display: flex;
     flex-direction: column-reverse;
-   
- }
- @media screen and (min-width:768px) {
+  }
+
+
+  @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
+ 
    
     
- }
+  }
+
     @media screen and (min-width:1200px) {
        display: flex;
        list-style: none;
        align-items: center;
-      
        padding: 0;
        margin-left: 300px;
+      
     }
+
 }
 
 .contact__list {
@@ -396,6 +390,7 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     text-decoration: none;
+    margin-right: 10px;
    
 }
 
@@ -404,7 +399,8 @@
     display: flex;
 
     @media screen and (max-width:767px) {
-        margin: 0;
+        margin-left: 40px;
+        margin-bottom: 0;
         padding: 0;
     }
     
@@ -414,6 +410,8 @@
    }
 }
 .mobile-nav_item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  
 }
 
