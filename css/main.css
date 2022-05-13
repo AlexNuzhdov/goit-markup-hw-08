@@ -1961,7 +1961,7 @@ img {
 
 .form-checkbox__checkbox:checked + .form-checkbox__icon {
   background-color: #2196F3;
-  background-image: url(/images/icon-svg/form/Vector.svg);
+  background-image: url(../images/icon-svg/form/Vector.svg);
   background-size: contain;
   background-origin: content-box;
   border-color: #2196F3;
