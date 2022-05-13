@@ -31,8 +31,6 @@
 }
 .adress {
     padding-top: 60px;
-    // padding-bottom: 60px;
-   
     text-align: center;
 
     @media screen and (min-width:768px) {
@@ -50,7 +48,6 @@
     
     list-style: none;
      padding: 0;
-    //  margin-top: 20px;
      margin-bottom:0;
 
      @media screen and (min-width:768px) {
@@ -88,10 +85,7 @@
     
 
 }
-// .aside__item:hover,
-// .aside__item:focus {
-//   color: $accent-color;
-// }
+
 
 .aside__colortext {
    color: $primary-white-color;
@@ -133,7 +127,6 @@
 }
 .social-network__links {
     padding:0;
-    // margin-top: 20px;
     text-align: center;
     display: flex;
     margin-bottom: 0;
@@ -177,12 +170,10 @@
     background-color: $accent-color;
     }
 
-}
- .social-icon__button:hover,
- .social-icon__button:focus{
-    background-color: $accent-color;
     
+
 }
+
 
 .social-icon__instagram {
   
@@ -217,7 +208,7 @@
 }
 /* ФОРМА ФУТЕРА */
 .footer-form {
-    // padding-top: 72px;
+  
     padding-bottom: 94px;
     margin-top: 60px;
 
@@ -325,8 +316,7 @@
     margin-left: 10px;
 }
 .form {
-   
-    // margin-top: 20px;
+
     padding: 0;
     @media screen and (min-width:768px) {
        text-align: center;

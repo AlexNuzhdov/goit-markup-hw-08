@@ -2,11 +2,8 @@
 /* ЛИНИЯ ХЕДЕРА*/
 .head {
     border-bottom: 1px solid $border-header-color;
-    /*Позиционирование меню*/ 
     position: relative;
 }
-
-/* ДИСПЛЕЙ ФЛЕКС ХЕДЕР*/
 
 .main-nav {
     display: flex;
@@ -16,10 +13,8 @@
 
 /*МЕНЮ КОНТЕЙНЕР БУРГЕРА*/
 .menu-container { 
-//  display: flex;
     z-index: 2;
-
-    @media screen and (max-width:767px) {
+      @media screen and (max-width:767px) {
         display: none;
         position: absolute;
         top: 340px;
@@ -27,6 +22,7 @@
         width: 480px;
         height: 700px;
         transform: translate(-50%, -50%);
+       
         background-color: $primary-white-color;
        
         &.is-open {
@@ -52,9 +48,8 @@
     padding: 0;
     border: none;
     background-color: transparent;
-    // margin-left: auto;
-
-   /*CКРЫТИЕ ИКОНКИ УБИРАЕМ ИЗ ПОТОКА*/
+    
+  /*CКРЫТИЕ ИКОНКИ УБИРАЕМ ИЗ ПОТОКА*/
     & .icon-cross {
         display: none;
     }
@@ -75,12 +70,6 @@
 }
 /*------------* END--------------*/
 
-// .menu-bg.is-open .icon-cross {
-//     display: block;
-// }
-// .menu-bg.is-open .icon-menu {
-//     display: none;
-// }
 
 .site-nav {
     list-style: none;
@@ -98,15 +87,10 @@
          
     }
    
+      @media screen and (min-width:1200px) {
+      display: flex;
     
-//    /* CКРЫТИЕ СЕКЦИИ ДО 767 px*/
-//    @media screen and (max-width:767px) {
-//     display: none;
-//  }
-   @media screen and (min-width:1200px) {
-   display: flex;
-    
-  }
+    }
   
 
     
@@ -122,9 +106,6 @@
          
     }
 
-   
-   
-
     @media screen and (min-width:768px) {
         & + & {
         margin-left: 50px;
@@ -132,7 +113,6 @@
          
     }
    
-
 }
 
  .site-nav__link {
@@ -182,12 +162,6 @@
     }
     
 }
-
-
-// .site-nav__link:hover,
-// .site-nav__link:focus{
-//     color: var(--accent-color);
-// }
 
 // /* CURRENT SITE-NAV*/
 .site-nav .site-nav__link.site-nav__current {
@@ -239,10 +213,10 @@
   @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 10px;
  
    
-    
-  }
+ }
 
     @media screen and (min-width:1200px) {
        display: flex;
@@ -257,7 +231,6 @@
 
 .contact__list {
    
-
     @media screen and (max-width:767px) {
         margin-bottom: 32px;
     }
@@ -265,7 +238,7 @@
 }
 
 .contact__link {
-    // display: flex;
+   
     flex-direction:row-reverse;
     align-items: center;
     color: $secondary-text-color;
@@ -299,8 +272,6 @@
         color: #757575;
     }
 }
-
-
 
 .contact__link--tel {
     display: flex;
@@ -343,9 +314,9 @@
        
     }
 
-
-
 }
+
+
 .contact__mail {
     width: 16px;
     height: 12px;

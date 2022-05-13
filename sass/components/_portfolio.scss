@@ -24,7 +24,7 @@
     margin: 0;
 
     @media screen and(max-width:767px) {
-        
+        padding-left: 0;
         padding-top: 66px;
     } 
     @media screen and(min-width:768px) {
@@ -66,7 +66,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    // text-align: center;
     letter-spacing: 0.03em;
     text-decoration: none;
 
@@ -81,31 +80,24 @@
     }
 }
 
-.control__button:hover, 
-.control__button:focus {
-    background-color: $accent-color;
-    color: $primary-white-color;
-}   
-
 /* КАРТОЧКИ CARD_SET */
 
-.card-set{
+.card-set {
     padding: 0;
     margin: 0;
     list-style: none;
-    // display: flex;
+    display: flex;
     flex-wrap: wrap;
+    margin-top: 25px;
    
-    // margin-left: -30px;
-    // margin-top: -30px;
-
-  
     @media screen and(min-width:768px) {
         display: flex;
+       
         margin: -15px;
-     
-   
-  }
+        
+       
+      
+    }
   @media screen and(min-width:1200px) {
   
     margin: -15px;
@@ -115,23 +107,9 @@
 }
 
 
-// .card-set > .card-set__list {
-
-   
-
-//     // @media screen and(min-width:768px) {
-//     //     flex-basis: calc((100% - 4 * 5px) /2 );
-//     //     margin: 5px;
-     
-//     // }
-  
-//     // flex-basis: calc(100% / 3 - 30px);
-//     // margin-top: 30px;
-//     // margin-left: 30px;
-// }
 /* HOVER ТЕНИ*/
 .card-set__list { 
-   
+   margin-bottom: 30px;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -167,11 +145,7 @@
     position: relative;
     overflow: hidden;
    z-index: 1;
-    @media screen and (min-width:768px) {
-        width: 354px;
-        
-    }
-   
+ 
 
 }
 
@@ -214,19 +188,20 @@
 /* ПАДИНГИ КАРТОЧЕК ПОРТФОЛИО*/
 .card-сontent {
     padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
     padding-left: 24px;
-
     border: 1px solid $border-color;
+    // flex-grow: 1;
+    height: 110px;
 }
+
+
 .card-set__list  .card-сontent__title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin-top: 0;
+    margin: 0;
     margin-bottom: 0;
 }
 .card-set__list  .card-сontent__text {

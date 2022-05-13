@@ -40,27 +40,15 @@
   /*МОБИЛЬНЫЕ ШИРОТЫ*/
     width: 450px;
     height: 609px;
-    // width: 100%;
-    top:70%;
+   
+    top:83%;
     left:49%;
     transform: translate(-50%, -50%);
     background-color: $primary-white-color;
     position: absolute;
    
   
-    
-//   @media screen and (min-width:768px) {
-//       position: absolute;
-//       top: 50%;
-//       left: 50%;
-//       transform: translate(-50%, -50%);
-//       max-width: 450px;
-//       max-height: 609px;
-//       width: 100%;
-      
-//   }
-
- @media screen and (min-width:1200px) {
+    @media screen and (min-width:1200px) {
     width: 528px;
     height: 581px;
     top:80%;
@@ -116,23 +104,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-// /* ФОКУС МАЛЕНЬКОЙ КНОПКИ*/
-// .modal__button:focus .modal__close {
-//     fill:$accent-color;
-//     transition-property:  fill;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-// }
-//   /* ХОВЕР КНОПКИ и СКОРОСТЬ ХОВЕРА ЗАКРЫТИЯ */
-// .modal__close:hover {
-//     fill:#2196F3;
-//     cursor: pointer;
-//       transition-property:  fill;
-//       transition-duration: 250ms;
-//       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  
-// }
 
 /* КНОПКА ФОРМЫ МАЛЕНЬКАЯ*/
 .button-form {
@@ -164,7 +136,6 @@
 
 /* МОДАЛЬНАЯ ФОРМА*/
 .form-modal {
-    // width: 448px;
     margin-left: auto;
     margin-right: auto;
 
@@ -284,17 +255,7 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-// .form-field__input:hover ~ .form-field__person,
-// .form-field__input:focus ~ .form-field__person,
-// .form-field__input:hover ~ .form-field__tel,
-// .form-field__input:focus ~ .form-field__tel,
-// .form-field__input:hover ~ .form-field__email,
-// .form-field__input:focus ~ .form-field__email{
-//     fill: #2196F3;
-//     transition-property:  fill;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-// }
+
 
 .form-field__tel{
     position: absolute;

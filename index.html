@@ -25,8 +25,8 @@
                      aria-expanded="false"  aria-controls="menu-container">
 
                       <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
-                        <use class="icon-cross" href="/images/icon-svg/form-mobile/symbol-defs.svg#close_40px"></use>
-                        <use class="icon-menu" href="/images/icon-svg/form-mobile/symbol-defs.svg#menu_40px"></use>
+                        <use class="icon-cross" href="./images/icon-svg/form-mobile/symbol-defs.svg#close_40px"></use>
+                        <use class="icon-menu" href="./images/icon-svg/form-mobile/symbol-defs.svg#menu_40px"></use>
                       </svg>
                    </button>
 
@@ -60,10 +60,10 @@
                         
                         </ul>
                         <ul class="mobile-nav">
-                            <li class="mobile-nav_item"><a href="#"class="mobile-nav_link">Instagram</a></li>
-                            <li class="mobile-nav_item"><a href="#"class="mobile-nav_link">Twitter</a></li>
-                            <li class="mobile-nav_item"><a href="#"class="mobile-nav_link">Facebook</a></li>
-                            <li class="mobile-nav_item"><a href="#"class="mobile-nav_link">LinkedIn</a></li>
+                            <li class="mobile-nav_item"><a href="#" class="mobile-nav_link">Instagram</a></li>
+                            <li class="mobile-nav_item"><a href="#" class="mobile-nav_link">Twitter</a></li>
+                            <li class="mobile-nav_item"><a href="#" class="mobile-nav_link">Facebook</a></li>
+                            <li class="mobile-nav_item"><a href="#" class="mobile-nav_link">LinkedIn</a></li>
                         </ul>
                  
                     </div>
@@ -159,8 +159,20 @@
 
                 <ul class="team">
                     <li class="team__list">
-                        <img src="./images/team/team-1.jpg" alt="Игорь Демьяненко" width="450" height="460">
+                        <picture>
+                            <source srcset="./images/team/igor_phone@1.jpg 1x, ./images/team/igor_phone@2.jpg 2x" 
+                             media="(max-width: 767px)"/>
 
+                            <source 
+                             srcset="./images/team/igor_tablet@1.jpg 1x, ./images/team/igor_tablet@2.jpg 2x"
+                             media="(max-width: 1199px)"/>
+
+                             <source 
+                             srcset="./images/team/igor_desktop@1.jpg 1x, ./images/team/igor_desktop@2.jpg 2x"
+                             media="(min-width: 1200px)"/>
+ 
+                        <img src="./images/team/team-1.jpg" alt="Игорь Демьяненко" width="450" height="460">
+                       </picture>
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Игорь Демьяненко</h3>
                             <p class="desc-content__subtitle">Product Designer</p>
@@ -207,7 +219,21 @@
                         </div>
                     </li>
                     <li class="team__list">
-                        <img src="./images/team/team-2.jpg" alt="Ольга Репина" width="450" height="460">
+                        <picture>
+                            <source srcset="./images/team/olga_mobile@1.jpg 1x, ./images/team/olga_mobile@2.jpg 2x" 
+                            media="(max-width: 767px)"/>
+
+                           <source 
+                            srcset="./images/team/olga_tablet@1.jpg 1x, ./images/team/olga_tablet@2.jpg 2x"
+                            media="(max-width: 1199px)"/>
+
+                            <source 
+                            srcset="./images/team/olga_desctop@1.jpg 1x, ./images/team/olga_desctop@2.jpg 2x"
+                            media="(min-width: 1200px)"/>
+
+                       
+                         <img src="./images/team/team-2.jpg" alt="Ольга Репина" width="450" height="460">
+                        </picture>
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Ольга Репина</h3>
                             <p class="desc-content__subtitle">Frontend Developer</p>
@@ -255,7 +281,20 @@
                         </div>
                     </li>
                     <li class="team__list">
-                        <img src="./images/team/team-3.jpg" alt="Николай Тарасов" width="450" height="460">
+                        <picture>
+                            <source srcset="./images/team/nik_mobile@1.jpg 1x, ./images/team/nik_mobile@2.jpg 2x" 
+                            media="(max-width: 767px)"/>
+
+                           <source 
+                            srcset="./images/team/nik_tablet@1.jpg 1x, ./images/team/nik_tablet@2.jpg 2x"
+                            media="(max-width: 1199px)"/>
+
+                            <source 
+                            srcset="./images/team/nick_desctop@1.jpg 1x, ./images/team/nick_desctop@2.jpg 2x"
+                            media="(min-width: 1200px)"/>
+ 
+                          <img src="./images/team/team-3.jpg" alt="Николай Тарасов" width="450" height="460">
+                        </picture>
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Николай Тарасов</h3>
                             <p class="desc-content__subtitle">Marketing</p>
@@ -300,7 +339,20 @@
                         </div>
                     </li>
                     <li class="team__list">
+                        <picture>
+                            <source srcset="./images/team/mich_mobile@1.jpg 1x, ./images/team/mich_mobile@2.jpg 2x" 
+                            media="(max-width: 767px)"/>
+
+                           <source 
+                            srcset="./images/team/mich_tablet@1.jpg 1x, ./images/team/mich_tablet@2.jpg 2x"
+                            media="(max-width: 1199px)"/>
+
+                            <source 
+                            srcset="./images/team/mich_desctop@1.jpg 1x, ./images/team/mich_desctop@2.jpg 2x"
+                            media="(min-width: 1200px)"/>
+                        
                         <img src="./images/team/team-4.jpg" alt="Михаил Ермаков" width="450" height="460">
+                        </picture>
                         <div class="desc-content">
                             <h3 class="desc-content__caption">Михаил Ермаков</h3>
                             <p class="desc-content__subtitle">UI Designer</p>

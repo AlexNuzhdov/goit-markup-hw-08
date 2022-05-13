@@ -7,18 +7,14 @@ img {
 
 /* CКРЫТИЕ СЕКЦИИ*/
 .box-project {
+    padding-bottom: 94px;
+
     @media (max-width:1199px) {
        display: none;
     }
 }
 
-
-/* ПАДИНГИ PROJECT SECTION*/
-.box-project {
-    padding-bottom: 94px;
- 
- }
- /*КОНТЕЙНЕР  PROJECT SECTION*/
+/*КОНТЕЙНЕР  PROJECT SECTION*/
 
 /* ЗАГОЛОВОК PROJECT-SECTION*/
 .box-project__heading { 

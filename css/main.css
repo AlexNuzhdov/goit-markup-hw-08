@@ -68,11 +68,9 @@ body {
 /* ЛИНИЯ ХЕДЕРА*/
 .head {
   border-bottom: 1px solid #ECECEC;
-  /*Позиционирование меню*/
   position: relative;
 }
 
-/* ДИСПЛЕЙ ФЛЕКС ХЕДЕР*/
 .main-nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -289,6 +287,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-left: 10px;
   }
 }
 
@@ -510,9 +509,10 @@ img {
   background-size: cover;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .overlay .overlay {
-    background-image: url("../images/mobile/hero/Header_mobile@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/mobile/hero/Header_mobile@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/Header_mobile@2x.jpg");
   }
 }
 
@@ -523,9 +523,10 @@ img {
   }
 }
 
-@media (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 481px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("../images/mobile/hero/Header_tablet@2X.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/hero/Header_tablet@2X.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Header_tablet@2X.jpg");
   }
 }
 
@@ -540,9 +541,10 @@ img {
   }
 }
 
-@media (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("../images/mobile/hero/Heder_desctop@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/mobile/hero/Heder_desctop@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/mobile/hero/Heder_desctop@2x.jpg");
   }
 }
 
@@ -740,15 +742,14 @@ img {
 }
 
 /* CКРЫТИЕ СЕКЦИИ*/
+.box-project {
+  padding-bottom: 94px;
+}
+
 @media (max-width: 1199px) {
   .box-project {
     display: none;
   }
-}
-
-/* ПАДИНГИ PROJECT SECTION*/
-.box-project {
-  padding-bottom: 94px;
 }
 
 /*КОНТЕЙНЕР  PROJECT SECTION*/
@@ -1018,7 +1019,6 @@ img {
   fill: #FFFFFF;
 }
 
-/* HOVER и FOCUS СОЦИАЛЬНОЙ СЕТИ*/
 .team__list {
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
@@ -1400,11 +1400,6 @@ img {
   background-color: #2196F3;
 }
 
-.social-icon__button:hover,
-.social-icon__button:focus {
-  background-color: #2196F3;
-}
-
 .social-icon__instagram {
   padding: 0;
   width: 20px;
@@ -1647,7 +1642,7 @@ img {
   /*МОБИЛЬНЫЕ ШИРОТЫ*/
   width: 450px;
   height: 609px;
-  top: 70%;
+  top: 83%;
   left: 49%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -2109,6 +2104,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .control {
+    padding-left: 0;
     padding-top: 66px;
   }
 }
@@ -2172,19 +2168,17 @@ img {
   color: #FFFFFF;
 }
 
-.control__button:hover,
-.control__button:focus {
-  background-color: #2196F3;
-  color: #FFFFFF;
-}
-
 /* КАРТОЧКИ CARD_SET */
 .card-set {
   padding: 0;
   margin: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 25px;
 }
 
 @media screen and (min-width: 768px) {
@@ -2204,6 +2198,7 @@ img {
 
 /* HOVER ТЕНИ*/
 .card-set__list {
+  margin-bottom: 30px;
   -webkit-transition-property: -webkit-box-shadow;
   transition-property: -webkit-box-shadow;
   transition-property: box-shadow;
@@ -2246,12 +2241,6 @@ img {
   position: relative;
   overflow: hidden;
   z-index: 1;
-}
-
-@media screen and (min-width: 768px) {
-  .card-thumb {
-    width: 354px;
-  }
 }
 
 .card-thumb__text {
@@ -2297,10 +2286,9 @@ img {
 /* ПАДИНГИ КАРТОЧЕК ПОРТФОЛИО*/
 .card-сontent {
   padding-top: 20px;
-  padding-right: 24px;
-  padding-bottom: 20px;
   padding-left: 24px;
   border: 1px solid #EEEEEE;
+  height: 110px;
 }
 
 .card-set__list .card-сontent__title {
@@ -2308,7 +2296,7 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0;
+  margin: 0;
   margin-bottom: 0;
 }
 

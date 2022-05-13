@@ -15,13 +15,8 @@ img {
         padding-bottom: 94px;
     }
   
-    
-
 }
 
-
-    
-// }
 /* ЗАГОЛОВОК КЛИЕНТЫ*/
 .client-section__heading {
     color: $primary-text-color;
@@ -30,11 +25,11 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     margin-top: 0;
-    // margin-bottom: 50px;
-   text-align: center;
+    text-align: center;
 }
+
 .client {
-    // display: flex;
+   
     list-style: none;
     padding: 0;
     margin: 0;
@@ -90,15 +85,12 @@ img {
     }
 
     
-     
-
-    
-    
 }
+
+
 /*КНОПКИ ПОСТОЯННЫЕ КЛИЕНТЫ*/
 .client__button {
     display: flex;
-    // width: 170px;
     width: 210px;
     height: 92px;
     padding: 0;
@@ -119,10 +111,6 @@ img {
    
 }
 
-
-// .client__button:hover{
-//     border-color: $accent-color;
-// }
 .client__logo {
     width: 106px;
     height: 60px;
@@ -139,14 +127,3 @@ img {
       fill: $accent-color;
     }
 }
-
-// /* hover и focus постоянные клиенты*/
-// .client__button:hover .client__logo,
-// .client__button:focus .client__logo {
-//     fill: $accent-color;
-    
-// }
-// .client__item:not(:last-child){
-//     margin-right: 30px;
-   
-// }
