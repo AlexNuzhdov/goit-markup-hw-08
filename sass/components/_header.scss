@@ -13,31 +13,36 @@
 
 /*МЕНЮ КОНТЕЙНЕР БУРГЕРА*/
 .menu-container { 
-    z-index: 2;
+    z-index:2;
+   
       @media screen and (max-width:767px) {
         display: none;
         position: absolute;
-        top: 340px;
-        left:50%;
-        width: 480px;
-        height: 700px;
-        transform: translate(-50%, -50%);
-       
+        position: fixed;
+        overflow-y: scroll;
+        top: 0;
+        left:0;
+        width: 100%;
+        height: 100%;
+        // transform: translate(-50%, -50%);
         background-color: $primary-white-color;
-       
+
         &.is-open {
             display: block;
         }
-      
+        
     }
-
+   
+  
+   
     @media screen and (min-width:768px) {
         display: flex;
         text-align: center;
     }
-
+   
 
 }
+
 
 
 /* ОФОРМЛЕНИЕ КНОПКИ МЕНЮ БУРГЕРА*/
@@ -67,8 +72,14 @@
     }
 
     z-index: 3;
+   
 }
+
+
+
 /*------------* END--------------*/
+
+
 
 
 .site-nav {
@@ -203,7 +214,8 @@
     list-style: none;
    
   @media screen and (max-width:767px) {
-    margin: 0;
+    margin-bottom: 64px;
+    margin-top: 0;
     padding-left: 40px;
     display: flex;
     flex-direction: column-reverse;
@@ -370,9 +382,10 @@
     display: flex;
 
     @media screen and (max-width:767px) {
-        margin-left: 40px;
-        margin-bottom: 0;
-        padding: 0;
+        margin: 0;
+        padding-bottom: 48px;
+       
+     
     }
     
 

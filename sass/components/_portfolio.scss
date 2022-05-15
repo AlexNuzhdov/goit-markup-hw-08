@@ -25,11 +25,12 @@
 
     @media screen and(max-width:767px) {
         padding-left: 0;
+        margin-bottom: 40px;
         padding-top: 66px;
     } 
     @media screen and(min-width:768px) {
-        
-        margin-bottom: 30px;
+        margin-bottom: 30px; 
+       
     } 
 
     @media screen and(min-width:1200px) {
@@ -42,9 +43,16 @@
 
 .control .control__item {
     margin-left: 8px;
-    margin-bottom: 15px;
-   
+    // margin-bottom: 15px;
+    @media screen and (max-width:767px) {
+        &:not(:last-child){
+            margin-bottom: 15px;
+         }
+         
+    }
+
 }
+
 .сontrol .item {
    padding: 0;
 }
@@ -144,7 +152,7 @@
 .card-thumb {
     position: relative;
     overflow: hidden;
-   z-index: 1;
+//    z-index: 1;
  
 
 }

@@ -8,14 +8,17 @@ img {
 
 .hero {
 text-align: center;
-     
+
+
 }
  
 /*ФОН НА ВЕСЬ БЛОК HERO и ФОНОВЫЕ ОТЗЫВЧИВЫЕ ИЗОБРАЖЕНИЯ*/
 .overlay {
 
+   padding-top: 118px;
+   padding-bottom: 118px;
     min-width: 480px;
-    height: 400px;
+  
     margin-left: auto;
     margin-right: auto;
   
@@ -44,7 +47,7 @@ text-align: center;
         
 }
 
-   @media (min-width:481px) {
+   @media (min-width:768px) {
        .overlay {
         
         background-image:linear-gradient(
@@ -61,7 +64,7 @@ text-align: center;
           to right,
           rgba(47, 48, 58, 0.4), 
           rgba(47, 48, 58, 0.4)), 
-          url('/images/mobile/hero/Header_tablet@2X.jpg');
+          url('../images/mobile/hero/Header_tablet@2X.jpg');
        }
      }
        
@@ -69,12 +72,14 @@ text-align: center;
    }
 
 
-   @media (min-width:769px) {
+   @media (min-width:1200px) {
     .overlay {
-        max-width: 1600px;
-        height: 600px;
+      max-width: 1600px;
+        padding-top: 200px;
+        padding-bottom: 200px;
         margin-left: auto;
         margin-right: auto;
+       
      background-image:linear-gradient(
          to right,
          rgba(47, 48, 58, 0.4), 
@@ -89,7 +94,7 @@ text-align: center;
        to right,
        rgba(47, 48, 58, 0.4), 
        rgba(47, 48, 58, 0.4)), 
-       url('/images/mobile/hero/Heder_desctop@2x.jpg');
+       url('./images/mobile/hero/Heder_desctop@2x.jpg');
     }
   }
    
@@ -106,9 +111,10 @@ text-align: center;
     line-height: 1.6;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    padding-top:118px;
-    margin-top: 0px;
+    margin: 0;
+    padding: 0;
+   
+    
     
    
    @media screen and (min-width:1200px){
@@ -117,8 +123,7 @@ text-align: center;
     line-height: 1.4;
     text-transform:uppercase;
     letter-spacing: 0.06em;
-    padding-top: 200px;
-    margin-bottom: 30px;
+ 
 }
    
 }
@@ -142,7 +147,7 @@ text-align: center;
     transition-duration: 250ms;
     transition-timing-function: $animation-time;
     
-
+    margin-top: 30px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.89;

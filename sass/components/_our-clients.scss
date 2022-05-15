@@ -9,6 +9,12 @@ img {
 
     padding-top: 60px;
     padding-bottom: 30px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+  
          
     @media screen and (min-width:1200px) {
         padding-top: 94px;
@@ -21,11 +27,23 @@ img {
 .client-section__heading {
     color: $primary-text-color;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
+    font-size: 28px;
+    line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-bottom: 30px;
     margin-top: 0;
     text-align: center;
+
+    @media screen and (min-width:1200px) {
+        color: $primary-text-color;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+         margin-bottom: 50px;
+        text-align: center;
+    
+    }
 }
 
 .client {
@@ -91,6 +109,8 @@ img {
 /*КНОПКИ ПОСТОЯННЫЕ КЛИЕНТЫ*/
 .client__button {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 210px;
     height: 92px;
     padding: 0;
@@ -106,16 +126,22 @@ img {
     &:hover {
     border-color: $accent-color;
     }
-    
+
+    @media (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+        width: 226px;
+        align-items: center;
+        justify-content: center;
+    }
 
    
 }
 
 .client__logo {
+
     width: 106px;
     height: 60px;
-    padding: auto;
-    margin: auto;
     fill: $color-icon;
 
     transition-property: fill;
@@ -126,4 +152,6 @@ img {
     .client__button:focus & {
       fill: $accent-color;
     }
+   
+ 
 }
