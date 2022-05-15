@@ -15,15 +15,13 @@ text-align: center;
 /*ФОН НА ВЕСЬ БЛОК HERO и ФОНОВЫЕ ОТЗЫВЧИВЫЕ ИЗОБРАЖЕНИЯ*/
 .overlay {
 
-   padding-top: 118px;
-   padding-bottom: 118px;
-    min-width: 480px;
+      padding-top: 118px;
+      padding-bottom: 118px;
+      min-width: 480px;
   
-    margin-left: auto;
-    margin-right: auto;
-  
-   
-    background-image: linear-gradient(
+      margin-left: auto;
+      margin-right: auto;
+      background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4), 
         rgba(47, 48, 58, 0.4)),
@@ -36,14 +34,14 @@ text-align: center;
          @media screen and (min-device-pixel-ratio: 2),
          screen and (min-resolution: 192dpi),
          screen and (min-resolution: 2dppx) {
-         .overlay {
-           background-image:linear-gradient(
-            to right,
-            rgba(47, 48, 58, 0.4), 
-            rgba(47, 48, 58, 0.4)), 
-            url('../images/mobile/hero/Header_mobile@2x.jpg');
-         }
-       }
+         
+         background-image:linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4), 
+          rgba(47, 48, 58, 0.4)), 
+          url('../images/mobile/hero/Header_mobile@2.jpg');
+       
+     }
         
 }
 
@@ -64,7 +62,7 @@ text-align: center;
           to right,
           rgba(47, 48, 58, 0.4), 
           rgba(47, 48, 58, 0.4)), 
-          url('../images/mobile/hero/Header_tablet@2X.jpg');
+          url('../images/mobile/hero/Header_tablet@2.jpg');
        }
      }
        
@@ -83,7 +81,7 @@ text-align: center;
      background-image:linear-gradient(
          to right,
          rgba(47, 48, 58, 0.4), 
-         rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/Heder_desctop@1.jpg");
+         rgba(47, 48, 58, 0.4)), url("../images/mobile/hero/Header_desktop@1.jpg");
     }
     
     @media screen and (min-device-pixel-ratio: 2),
@@ -94,7 +92,7 @@ text-align: center;
        to right,
        rgba(47, 48, 58, 0.4), 
        rgba(47, 48, 58, 0.4)), 
-       url('./images/mobile/hero/Heder_desctop@2x.jpg');
+       url('../images/mobile/hero/Header_desktop@2.jpg');
     }
   }
    
